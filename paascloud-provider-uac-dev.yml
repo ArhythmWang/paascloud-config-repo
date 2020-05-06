@@ -6,7 +6,8 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
   datasource:
     url: jdbc:mysql://192.168.222.129:3306/paascloud_uac?useUnicode=false&characterEncoding=utf8
-
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
 mybatis:
   type-aliases-package: com.paascloud.provider.model.domain
   mapper-locations: classpath:mapper/*.xml,classpath*:sdk/mapper/*.xml
