@@ -6,6 +6,9 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
   datasource:
     url: jdbc:mysql://paascloud-db-mysql:3306/paascloud_omc?useUnicode=false&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 642352261
 
 liquibase:
   change-log: classpath:liquibase/index.xml
